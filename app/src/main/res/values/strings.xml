@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MinhasTarefas</string>
+    <string name="dogcat">DogCat</string>
+    <string name="slogan">Encontre seu melhor amigo</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="minhas">Minhas</string>
+
+</resources>

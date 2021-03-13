@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="grey">#d3d3d3</color>
+    <color name="rosa">#F0FD7AA7</color>
+    <color name="rosaClaro">#F0FAA5C2</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="background_color">#9969D3</color>
+    <color name="texto">#222324</color>
+    <color name="caixaTexto">#C1C5C5CA</color>
+    <color name="botao">#E16B6B</color>
+    <color name="fundoFragment">#F3F3F3</color>
+
+
+</resources>
