@@ -13,10 +13,7 @@
             android:theme="@style/AppTheme">
         <activity android:name=".activities.AddTarefa">
         </activity>
-        <activity android:name=".DoggActivity">
-        </activity>
-        <activity android:name=".CatsActivity">
-        </activity>
+
         <activity
                 android:name=".activities.SplashActivity"
                 android:theme="@style/AppTheme.NoActionBar">
