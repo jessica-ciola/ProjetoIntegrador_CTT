@@ -2,34 +2,36 @@ package com.ctt.minhastarefas.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.ItemTouchHelper
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import com.ctt.minhastarefas.ProgressoAdapter
 import com.ctt.minhastarefas.R
 import com.ctt.minhastarefas.TarefasAdapter
 import com.ctt.minhastarefas.activities.MainActivity
 import com.ctt.minhastarefas.model.SwipeToDeleteCallback
-//import com.ctt.minhastarefas.TarefasFragment.Companion.listaTarefa
 import com.ctt.minhastarefas.model.Tarefa
 
-lateinit var listaTarefas: MutableList<Tarefa>
 
-class TarefasFragment(listaTarefas: MutableList<Tarefa>) : Fragment() {
+class ProgressoFragment(listaProgresso: MutableList<Tarefa>) : Fragment() {
 
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_tarefas, container, false)
-
-
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_progresso, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -38,28 +40,26 @@ class TarefasFragment(listaTarefas: MutableList<Tarefa>) : Fragment() {
         val imagem = view.findViewById<ImageView>(R.id.imgvaziotarefas)
         val texto1 = view.findViewById<TextView>(R.id.txtTextoVaziotarefas)
         val texto2 = view.findViewById<TextView>(R.id.txtTextoVazio2tarefas)
-        val final = view.findViewById<ImageButton>(R.id.tarefaToFinal)
 
 
-        val rvTarefas = view.findViewById<RecyclerView>(R.id.listaTarefas)
+        val rvTarefas = view.findViewById<RecyclerView>(R.id.listaProgresso)
 
-        val adapterTarefas = TarefasAdapter(MainActivity.listaTarefas)
+        val adapterTarefas = ProgressoAdapter(MainActivity.listaTarefasProgresso)
         rvTarefas.adapter = adapterTarefas
 
         rvTarefas.layoutManager = LinearLayoutManager(requireContext())
 
-        if (MainActivity.listaTarefas.isEmpty()) {
+        if(MainActivity.listaTarefasProgresso.isEmpty()){
             imagem.visibility = View.VISIBLE
             texto1.visibility = View.VISIBLE
             texto2.visibility = View.VISIBLE
 
 
-        } else {
+        }else{
 
             imagem.visibility = View.INVISIBLE
             texto1.visibility = View.INVISIBLE
             texto2.visibility = View.INVISIBLE
-
 
         }
 
@@ -73,11 +73,7 @@ class TarefasFragment(listaTarefas: MutableList<Tarefa>) : Fragment() {
         val itemTouchHelper = ItemTouchHelper(swipeHandler)
         itemTouchHelper.attachToRecyclerView(rvTarefas)
 
-
-
     }
-
-
 
 
 

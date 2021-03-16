@@ -5,9 +5,11 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/white"
+        android:background="@color/fundoFragment"
         xmlns:app="http://schemas.android.com/apk/res-auto"
-        tools:context=".fragments.BlankFragment">
+        tools:context=".fragments.BlankFragment"
+        android:layout_marginTop="40dp"
+>
 
 
     <ImageView
@@ -52,6 +54,17 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txtTextoVazio" app:layout_constraintHorizontal_bias="0.542"
             app:layout_constraintVertical_bias="0.0"/>
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/listaTarefasFinal"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            tools:listitem="@layout/fragment_tarefas_list"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0" app:layout_constraintVertical_bias="0.0"/>
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

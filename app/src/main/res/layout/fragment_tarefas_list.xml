@@ -35,6 +35,26 @@
             app:layout_constraintStart_toStartOf="@+id/txtTituloTarefa"
             app:layout_constraintTop_toBottomOf="@+id/txtTituloTarefa"/>
 
+    <ImageButton
+            android:id="@+id/tarefaToFinal"
+            android:layout_height="40dp"
+            android:layout_width="40dp"
+            android:background="@drawable/ic_check"
+            android:layout_margin="10dp"
+            tools:text="Quer ser meu amigo?!"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tarefaToProgress" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginEnd="12dp" app:layout_constraintVertical_bias="0.285"/>
+    <ImageButton
+            android:id="@+id/tarefaToProgress"
+            android:layout_height="40dp"
+            android:layout_width="40dp"
+            android:background="@drawable/ic_progress"
+            android:layout_margin="10dp"
+            tools:text="Quer ser meu amigo?!"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="16dp" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.4" app:layout_constraintBottom_toBottomOf="parent"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

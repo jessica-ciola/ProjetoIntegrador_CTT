@@ -38,6 +38,8 @@ class MainActivity : AppCompatActivity() {
     }
     companion object{
         val listaTarefas = mutableListOf<Tarefa>()
+        val listaTarefasProgresso = mutableListOf<Tarefa>()
+        val listaTarefasFinal = mutableListOf<Tarefa>()
     }
 
 
