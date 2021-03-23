@@ -3,8 +3,8 @@
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/background_color</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimaryDark">#400057</item>
+        <item name="colorAccent">#9D39AE</item>
     </style>
 
 
@@ -12,6 +12,10 @@
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="FonteSize" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">11sp</item>
     </style>
 
 

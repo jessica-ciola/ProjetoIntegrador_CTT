@@ -18,7 +18,6 @@ import com.ctt.minhastarefas.model.SwipeToDeleteCallback
 //import com.ctt.minhastarefas.TarefasFragment.Companion.listaTarefa
 import com.ctt.minhastarefas.model.Tarefa
 
-lateinit var listaTarefas: MutableList<Tarefa>
 
 class TarefasFragment(listaTarefas: MutableList<Tarefa>) : Fragment() {
 
@@ -38,7 +37,7 @@ class TarefasFragment(listaTarefas: MutableList<Tarefa>) : Fragment() {
         val imagem = view.findViewById<ImageView>(R.id.imgvaziotarefas)
         val texto1 = view.findViewById<TextView>(R.id.txtTextoVaziotarefas)
         val texto2 = view.findViewById<TextView>(R.id.txtTextoVazio2tarefas)
-        val final = view.findViewById<ImageButton>(R.id.tarefaToFinal)
+
 
 
         val rvTarefas = view.findViewById<RecyclerView>(R.id.listaTarefas)
@@ -76,9 +75,6 @@ class TarefasFragment(listaTarefas: MutableList<Tarefa>) : Fragment() {
 
 
     }
-
-
-
 
 
 

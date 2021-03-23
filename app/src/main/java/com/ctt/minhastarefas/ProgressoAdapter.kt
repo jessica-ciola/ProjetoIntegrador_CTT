@@ -48,7 +48,7 @@ class ProgressoAdapter(private val listaProgresso: MutableList<Tarefa>) : Recycl
         holder.changeToFinal.setOnClickListener {
             val builder = AlertDialog.Builder(it.context)
             builder.setTitle("Tarefa " + holder.nomeTarefa.text)
-            builder.setMessage("Esta Tarefa está em andamento?")
+            builder.setMessage("Esta Tarefa está em finalizada?")
             builder.setPositiveButton("Sim") { dialog, which ->
 
                 MainActivity.listaTarefasFinal.add(listaProgresso[position])
